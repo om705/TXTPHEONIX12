@@ -53,7 +53,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["live"]) & SUDOERS)
+@bot.on_message(filters.command(["Haxzor"]) & SUDOERS)
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('Send TXT file 📩')
     input: Message = await bot.listen(editable.chat.id)
@@ -174,8 +174,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**Vid_id  »** {str(count).zfill(3)}\n\n**Title  »** {name1} {res} XENO.mkv\n\n**Batch »** {raw_text0}\n\n**Download by »** {raw_text3}\n\n'
-                cc1 = f'**Vid_id  »** {str(count).zfill(3)}\n\n**Title »** {name1} XENO.pdf \n\n**Batch »** {raw_text0}\n\n**Download by »** {raw_text3}\n\n'
+                cc = f'**Vid_id  »** {str(count).zfill(3)}\n\n**Title  »** {name1} {res} Hexzor.mkv\n\n**Batch »** {raw_text0}\n\n**Download by »** {raw_text3}\n\n'
+                cc1 = f'**Vid_id  »** {str(count).zfill(3)}\n\n**Title »** {name1} Xexzor.pdf \n\n**Batch »** {raw_text0}\n\n**Download by »** {raw_text3}\n\n'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
